@@ -1,0 +1,225 @@
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400);
+
+/*** The essential CSS needed for the layout ***/
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.Row {
+  display: table-row;
+}
+html>/**/body .Row {
+  height: 1px;
+}
+/* Contain floats and fix margin collapse issues in IE6/7 */
+.Row {
+  *zoom: 1;
+}
+
+html>body .Row.Expand {
+  height: auto;
+}
+
+/*** Some other CSS for the look ***/
+
+body {
+  background: #fbc034;
+}
+
+
+
+
+
+p, h1, h2, h3 {
+  margin: 10pt;
+}
+
+
+/*************************************************/
+
+.panel-table-container { 
+  padding : 10px;  
+}  
+  
+.panel-table { 
+  border : 1px solid #E7e7e7;
+  height : 200px;
+  width : 100%;
+}
+
+
+.panel-table th { 
+
+    color : white;
+    font-weight : 100;
+    font-size : 30px;
+}
+
+.panel-table th>div{ 
+  max-height : 100px;
+  overflow : hidden;
+  padding : 10px;
+}
+.panel-table .body>td>div{ 
+  max-height : 150px;
+  overflow : hidden;
+  padding : 10px;
+}
+
+
+.panel-tablerow2 { 
+  border : 1px solid #E7e7e7;
+  height : 150px;
+  width : 100%;
+}
+
+
+.panel-tablerow2 th { 
+
+    color : white;
+    font-weight : 100;
+    font-size : 30px;
+}
+
+.panel-tablerow2 th>div{ 
+  max-height : 150px;
+  overflow : hidden;
+  padding : 10px;
+}
+.panel-tablerow2 .body>td>div{ 
+  max-height : 150px;
+  overflow : hidden;
+  padding : 10px;
+}
+
+
+body {
+    background-color: #F5F6F3;
+    padding-left: 0;
+    margin: 0;
+    border: 0;
+}
+
+h1 { 
+    color: black;
+}
+
+.navbar2 { 
+    margin-left: 0px;
+    background: #1f2226;
+    padding-left: 0;
+    margin: 0;
+    border: 0;
+    max-width: 77px;
+    height: 200vh;
+}
+
+.navbar1 { 
+    background: white;
+}
+
+
+.navbar-brand { 
+    background: #565676;
+    max-width: 100px;
+
+}
+
+.navbar-header { 
+    max-width: 100px;
+    color: #1f2226;
+}
+
+.container-fluid { 
+    padding-left: 0;
+
+}
+
+.table1{ 
+    background-color: #00b38f;
+    color: white;
+}
+
+.table2{ 
+    
+    background-color: #ff3377;
+    color: white;
+}
+
+.table3{ 
+   background-color: #33cccc;
+   color: white;
+}
+
+.table4{ 
+   background-color: #66d9ff;
+   color: white;
+}
+
+.glyphicon { 
+  font-size: 2em;
+  display: block;
+  text-align: center;
+  color: silver;
+
+}
+
+.gpanel { 
+  font-size: .5em;
+  position: absolute;
+  top: 45px;
+  right: 35px;
+  color: white;
+}
+
+.gpanelrem {
+  font-size: .5em;
+  position: absolute;
+  top: 45px;
+  right: 15px;
+  color: white;
+
+}
+
+.gpaneldown {
+  font-size: .5em;
+  position: absolute;
+  top: 45px;
+  right: 55px;
+  color: white;
+
+}
+
+.t5head { 
+  background-color: #00b38f;
+  top: 0px;
+}
+
+
+.t6head { 
+  background-color: #ff3377;
+  top: 0px;
+}
+
+
+.t7head { 
+  background-color: #b366ff;
+  top: 0px;
+}
+
+.t8head { 
+  background-color: #33ccff;
+  top: 0px;
+}
+
+.panelbody { 
+  background-color: white;
+}
+
+
+
+
