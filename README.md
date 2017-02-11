@@ -8,7 +8,7 @@ Next steps:
 
 	Requirements.txt may have too many libraries. I will figure out the minimum needed for this project and update the requirements.txt
 
-	Row 2 and Row 3 panels need to be fixed so that the head is on top and the body background color spans the rest of space in panel. 
+    Row 2 and Row 3 panels look fine (white space spans entire background on Safari and Mozilla. On Chrome it does not work though. . . ). Need to make the dashboard render properly on all web browsers. 
 
 	I need to figure out what device sizes that this project is for, so then I can edit the xs, md, and lg sizes for rendering. 
 
