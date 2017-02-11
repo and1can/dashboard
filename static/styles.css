@@ -73,7 +73,7 @@ p, h1, h2, h3 {
 
 .panel-tablerow2 { 
   border : 1px solid #E7e7e7;
-  height : 150px;
+  height : 200px;
   width : 100%;
 }
 
@@ -86,14 +86,17 @@ p, h1, h2, h3 {
 }
 
 .panel-tablerow2 th>div{ 
-  max-height : 150px;
+  max-height : 200px;
   overflow : hidden;
-  padding : 10px;
+  padding : 20px;
+  position: absolute;
+  top: 0px;
+  width: 94.5%;
 }
 .panel-tablerow2 .body>td>div{ 
   max-height : 150px;
   overflow : hidden;
-  padding : 10px;
+  padding : 100px;
 }
 
 
@@ -196,7 +199,7 @@ h1 {
 
 .t5head { 
   background-color: #00b38f;
-  top: 0px;
+  top: 10px;
 }
 
 
@@ -218,6 +221,8 @@ h1 {
 
 .panelbody { 
   background-color: white;
+  height: 140px;
+
 }
 
 
