@@ -1,55 +1,10 @@
 <html>
   <head> 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
-        ]);
 
-        var options = {
-          title: 'My Daily Activities',
-          pieHole: 0.4,
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('alerts'));
-        chart.draw(data, options);
-      }
-    </script>
-
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
-        ]);
-
-        var options = {
-          title: 'My Daily Activities',
-          pieHole: 0.4,
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('access points'));
-        chart.draw(data, options);
-      }
-    </script>
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
+      google.charts.load('current', {'packages':['bar','corechart']});
       google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
@@ -71,7 +26,51 @@
 
         chart.draw(data, options);
       }
-    </script>
+    
+    
+      google.charts.setOnLoadCallback(drawColumn);
+      function drawColumn() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities',
+          pieHole: 0.4,
+        };
+
+        var chart2 = new google.visualization.PieChart(document.getElementById('alerts'));
+        chart2.draw(data, options);
+      } 
+   
+
+      google.charts.setOnLoadCallback(drawAccess);
+      function drawAccess() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities',
+          pieHole: 0.4,
+        };
+
+        var chart2 = new google.visualization.PieChart(document.getElementById('access points'));
+        chart2.draw(data, options);
+      } 
+      </script>
+
+    
   </head>
 
 
@@ -218,7 +217,7 @@
       <div class="panel-table-container col-lg-4 col-md-4 col-sm-4">
         <table class="panel-tablerow2">
           <tbody><tr><th><div class="t6head"> Access Points <span class="gpanel glyphicon glyphicon-refresh" aria-hidden="true"></span><span class="gpanelrem glyphicon glyphicon-remove" aria-hidden="true"></span><span class="gpaneldown glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div></th></tr>     
-            <tr class="alerts panelbody"><td> <div class="alerts" id="access points"></div> </td></tr>     
+            <tr class="alerts panelbody"><td> <div id="access points"></div> </td></tr>     
           </tbody>
         </table>
       </div>
