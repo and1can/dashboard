@@ -9,12 +9,7 @@ html, body {
 }
 
 
-.Row {
-  display: table-row;
-}
-html>/**/body .Row {
-  height: 1px;
-}
+
 /* Contain floats and fix margin collapse issues in IE6/7 */
 .Row {
   *zoom: 1;
@@ -89,7 +84,7 @@ p, h1, h2, h3 {
   max-height : 200px;
   overflow : hidden;
   padding : 20px;
-  position: absolute;
+  position: relative;
   top: 0px;
   width: 94.5%;
 }
@@ -138,8 +133,13 @@ h1 {
 }
 
 .container-fluid { 
-    padding-left: 0;
+  padding-left: 0px;
 
+}
+
+.container { 
+  width: 1000px;
+  padding-left: 0px;
 }
 
 .table1{ 
@@ -173,7 +173,7 @@ h1 {
 
 .gpanel { 
   font-size: .5em;
-  position: absolute;
+  position: relative;
   top: 45px;
   right: 35px;
   color: white;
@@ -181,7 +181,7 @@ h1 {
 
 .gpanelrem {
   font-size: .5em;
-  position: absolute;
+  position: relative;
   top: 45px;
   right: 15px;
   color: white;
@@ -190,7 +190,7 @@ h1 {
 
 .gpaneldown {
   font-size: .5em;
-  position: absolute;
+  position: relative;
   top: 45px;
   right: 55px;
   color: white;
@@ -225,6 +225,11 @@ h1 {
 
 }
 
+.alerts { 
+  height: 500px;
+  top: 100px;
+
+}
 
 
 
